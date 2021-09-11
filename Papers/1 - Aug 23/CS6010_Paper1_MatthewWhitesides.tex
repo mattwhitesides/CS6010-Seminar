@@ -1,0 +1,169 @@
+% options that should be set.
+\documentclass[journal,onecolumn]{IEEEtran}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Seminar Talk: ``From Smart Sensing to Smart Living'' (Speaker: Sajal Das)}
+
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+\author{Matthew~Whitesides}% <-this % stops a space
+
+% The paper headers
+\markboth{Missouri S\&T COMP\_SCI 6010: Seminar, Fall~2021}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+  Cyber-physical systems (CPS), the Internet of Things (IoT), and Smart Environments are established in our everyday lives and continue to advance exponentially. 
+  In this week's presentation, professor Sajal Das discusses the various research and areas of development in this exciting field of study.
+  Smart Environments and their systems generate a considerable amount of data. Various research methods such as machine learning and data science can parse this information to improve these human-machine systems.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+% \begin{IEEEkeywords}
+% IEEE, IEEEtran, journal, \LaTeX, paper, template.
+% \end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+
+\IEEEPARstart{I}{n} ``From Smart Sensing to Smart Living'' professor Sajal Das discusses various aspects of modern machine and human interaction. 
+Every day we intact with countless ``smart'' devices, which contain nontrivial computing ability or connection to other devices via a network. 
+Smart devices utilize an extensive array of technology to operate, generally containing some form of sensors in conjunction with a broader network such as body area networks (BAN), local area networks (LAN), or wide area networks (WAN). 
+These devices can utilize computing on the local machine or more powerful edge computing from the network connections. 
+Sensors gather data from the local devices and combine this with information from numerous similar devices connected to the network, generally at higher performance edge nodes or in the cloud. 
+This sensor data can then be analyzed and propagated back throughout the network to the devices to provide the user more information such as health monitoring recommendations or to improve a system such as a traffic control system.
+
+\section{Background}
+
+\subsection{Cyber-Physical Systems}
+
+A cyber-physical system is an interconnected system of computing devices that communicate with and interact with the physical world utilizing various sensors. 
+These sensors could be anything from health monitoring sensors (heart rate, blood pressure, temperature, etc.) to natural environment tracking. 
+Smart cities, buildings, environments, humans, and automobiles are examples of CPS, and many challenges are designing, developing, and securing these systems. 
+
+\subsection{Internet of Things}
+
+IoT devices are generally utilized within a cyber-physical system. These devices contain sensors and transmitters to connect the sensor to the central processing nodes in the network. 
+The modern term IoT covers a large range of devices such as energy meters, watches, household appliances, cars, doorbells, etc. These devices contain some amount of connectivity to a greater network of devices or the internet as a whole. However, their primary function is not to connect to other devices but utilize this ``smart'' ability to add features to their primary goal. 
+
+\subsection{Smart Environments}
+
+This general term encompasses all the technology these smart systems utilize within an environment, everything from the hardware, architecture, algorithms, processing, etc.
+What constitutes an environment is large in scope as well. Everything from agriculture environmental monitoring to smart cities to disaster monitoring all fall under the smart environment umbrella. 
+
+\subsection{Computing Technologies}
+
+All the data obtained by these smart sensors can be utilized in various ways, and different approaches may be needed to tackle this challenge. 
+Ideas such as distributed computing that spreads data computing across many individual less powerful nodes closer to the device could be beneficial for systems where a lot of general data needs to be processed but can allow for more time for changes to propagate through. 
+Cloud computing would have the smart devices upload their data to more powerful cloud computers to process later. 
+Mobile computing utilizes the mobile sensor node itself to do most of the processing of the data. 
+Finally, pervasive computing takes this one step further and enables the local device to do the entirety of the data analysis. 
+
+These computing nodes can execute various algorithms and research. Methods such as machine learning to predict outcomes or artificial intelligence to control systems use this information to inform or benefit users in these smart ecosystems. 
+
+\section{Research Contributions}
+
+Various research applications and ideas are discussed in the area of smart environments. 
+
+\subsection{CReWMaN Lab}
+
+In the CReWMaN Lab, all aspects of cyber-physical humans (CPH) are discussed. 
+These cyber-physical humans are actors within a smart environment that utilize the information from smart sensors to encompass the idea of smart living. 
+Many layers and technologies must be utilized to design a smart environment, including the network, computing, application, and sensor hardware layers. 
+These also contain research into security, design, architecture, algorithms, human impact, policy management, data science, and much more. 
+
+\subsection{Cyber-Physical Human Convergence}
+
+The following primary research discussed involves the cyber-physical-human convergence, or the idea of a system that integrates sensing, communication, computing, control, and human interaction in a natural loop. 
+In ``Looking Ahead in Pervasive Computing: Challenges and Opportunities in the Era of Cyber-Physical Convergence," M.~Conti, S. K. Das, et al. dive deep into the various aspects that need to be considered as these systems become more complex and ubiquitous [1]. 
+These challenges include all the ideas mentioned so far, everything from the sensor devices, networking infrastructure, computing technologies to the humans themselves and the reasoning that they are parsed from the data. 
+These ideas are expanded upon by an example of an airline pilot interacting with their autopilot. 
+The aircraft is the physical system, with various sensors, networking, and computing to control the plane in harmony with the pilot and make informed decisions. 
+
+\subsection{Smart Environments}
+
+On the macro-scale, these IoT devices enable societal-scale systems or systems that control large civil or environmental systems that a large number of people utilize. 
+In ``Smart Environments: Technologies, Protocols, and Applications," the authors describe the multidisciplinary nature of designing smart environments and how this encompasses almost all aspects of computer science problem-solving [2].
+The smaller environmental or human sensor networks collect and send data to the cloud or middleware services to be processed and inform environmental decisions such as energy management, healthcare, smart mobility, and crisis/disaster response. 
+
+\subsection{Smart Mobility}
+
+The idea of smart mobility utilizes environmental sensor information to efficiently and accurately navigate the environment. 
+Various mobile agents such as drones, humans, and vehicles utilize this sensor data to make informed navigation decisions. 
+Many different technologies can be utilized in implementing these systems, such as mobile wireless sensor networks, path prediction using machine learning, mobile crowdsourcing, and vehicular social networks, to name a few. 
+Smart mobility is an exciting field of study. Researchers are utilizing these systems in combination with technologies such as self-driving to create the future of transportation for humans. 
+
+\section{Lessons Learned}
+
+In this talk, we are given a window into the vast area of cyber-physical systems and all the areas of research required to design these systems. All aspects of computer science must be utilized to enable these systems, everything from networking technology to algorithm design, data science, hardware engineering, and countless more.
+These systems aim to improve all aspects of society and individual's lives; this can range from cost saving to life-saving systems. 
+In recent times these devices have exploded in popularity. While large-scale systems have utilized this IoT technology for years, users have widely adopted IoT devices such as smartphones or health-tracking wearables on an individual scale.
+This progress is unlikely to slow down, and the amount of data and need for intelligent implementation of these systems will be required making this an exciting field of study. 
+
+One exciting field to me personally is health tracking wearables. As mentioned in the lecture, these IoT devices enable human biometrics to integrate into a smart environment. 
+Many potential uses come to mind with these, including large-scale health monitoring, emergency service aid, biometric security authentication, and of course, the current primary use to give users insight into their bodily data. 
+Another fascinating field is in the smart mobility section. Advances in autonomous vehicles have essentially gone from nothing to fully self-driving in the past few years. 
+These advancements being all without the aid of smart cities and environments. As discussed in the presentation, if we can incorporate things like vehicle social networks and environmental sensor data into the vehicle machine learning models, we could unlock another considerable leap in the reliability of autonomous transportation.
+
+% \appendices
+% \section{Proof of the First Zonklar Equation}
+% Appendix one text goes here.
+
+% % you can choose not to have a title for an appendix
+% % if you want by leaving the argument blank
+% \section{}
+% Appendix two text goes here.
+
+
+% use section* for acknowledgment
+\section*{Acknowledgment}
+The author would like to thank Professor Sajal Das with the Department of Computer Science, Missouri University of Science and Technology.
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+M.~Conti, S. K. Das, et al.,``Looking Ahead in Pervasive Computing: Challenges and Opportunities in the Era of Cyber-Physical Convergence" Pervasive and Mobile Computing, 8(1):2-21, 2012.
+
+\bibitem{IEEEhowto:kopkad}
+D.~Cook. S. K. Das, ``Smart Environments: Technologies, Protocols, and Applications", John Wiley and Sons, Inc., 2005.
+
+\end{thebibliography}
+
+% biography section
+\begin{IEEEbiographynophoto}{Matthew Whitesides}
+  Master's Student at Missouri University of Science and Technology.
+\end{IEEEbiographynophoto}
+
+% that's all folks
+\end{document}
