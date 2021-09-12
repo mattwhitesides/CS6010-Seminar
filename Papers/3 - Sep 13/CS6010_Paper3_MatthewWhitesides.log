@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.5)  12 SEP 2021 06:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.5)  12 SEP 2021 08:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -130,13 +130,13 @@ LaTeX Font Info:    ... okay on input line 7.
 Here is how much of TeX's memory you used:
  1223 strings out of 478599
  24320 string characters out of 5858102
- 321487 words of memory out of 5000000
+ 322487 words of memory out of 5000000
  19169 multiletter control sequences out of 15000+600000
  435973 words of font info for 79 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,6n,41p,630b,164s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,41p,1107b,164s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on CS6010_Paper3_MatthewWhitesides.pdf (1 page, 29744 bytes).
+Output written on CS6010_Paper3_MatthewWhitesides.pdf (1 page, 30569 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream
