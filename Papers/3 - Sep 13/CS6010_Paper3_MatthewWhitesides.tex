@@ -57,9 +57,25 @@ While IoT devices bring a lot of exciting new possibilities, it also creates sig
 
 \section{Research Contributions and Results}
 
+\subsection{Encryption Protocols}
+
+In "A secure communication protocol for drones and smart objects." [2] Bertino et al. propose a secure and efficient communication protocol for drones and other smart devices. On top of being energy and computationally efficient, the authors novel protocol incorporates drone-specific required security functions, such as authenticated key agreement, non-repudiation, and user revocation. Drones are essentially mobile wireless sensor networks (WSN). However, mobile sensors introduce new security risks because mobile sensors are privileged nodes that store and transmit collected data exposed to physical capture by bad actors in the sensor network area. New encryption protocols must consider IoT device's wide-scale deployment and limited computational resources. In the end, the authors propose an efficient certificateless signcryption tag key encapsulation mechanism (eCLSC-TKEM) that reduces the time required to establish a shared key between a drone and a smart object over the existing protocols by using dual channel communication. 
+
+\subsection{White-Box Encryption}
+
+In "A Secure Shuffling Mechanism for White-Box Attack-Resistant Unmanned Vehicles" [3] Bertino et al. discuss the challenges of designing a method of protecting unmanned ariel vehicles (UAV) from strong white-box encryption attacks. UAVs are essentially more complex IoT mobile sensors. They are mobile, collect and transmit data, and more often, this data is highly sensitive, making them attractive targets for malicious attacks. The concept of white-box cryptography was created to protect software implementations of cryptographic algorithms in untrusted environments that are not equipped with hardware-assisted security mechanisms. White-box attackers access and manipulate the internal memory by obtaining a root privilege and installing malware. White-box is the worst-case form of attack and requires complex solutions to protect against an attack that already has this level of privilege. To tackle this issue, Bertino et al. propose a lookup table shuffling mechanism in the context of unmanned vehicle applications and analyze the level of security this provides against attack. They prove that their shuffling protocol makes it difficult for a white-box attacker to successfully encrypt/decrypt any plaintext/ciphertext even if the attacker knows the entire lookup table.
+
+\subsection{Incident Response and Prevention}
+
+The theme of IoT security seems to revolve around the idea of resource constraints, unsecured operating environments, and less secure communication protocols, making them especially susceptible to operational failures and security attacks. Wireless sensor networks again are not an exception. Dr. Bertino discusses this generalized problem in the incident response and prevention section. In "a security incident response and prevention system for wireless sensor network." [4] Bertino et al. propose a security incident response system designed to keep WSNs functional despite data anomalies or attacks and recover from attacks without significant interruption called Kinesis. In highly critical implementations of IoT devices such as societal functions or military equipment, devices need to be operational and quickly recoverable from attack and interruption. This use case is particularly challenging in IoT devices due to their resource and communication constraints. Kinesis essentially is a program that monitors nodes and detects and responds to anomalies in the network. Kinesis selects the response based on the suspect's security status, and since it's distributed, it does not require any central authority to trigger the response actions. Kinesis enables quick and efficient response to incidents required by the constraints that IoT nodes are often under. 
+
 \section{Lessons Learned}
 
+In today's presentation, Dr. Bertino sheds light on the challenges involved in protecting IoT devices. It is impressive how fast the growth of IoT and related technologies are being incorporated into our modern world. However, these devices are the most susceptible to attack due to their limited computational capabilities, often deployed in unmonitored or unsecured environments. They contain some of the most sensitive information, such as medical devices or military equipment. These implications make you consider the impact of attacks on these devices. Dr. Bertino discusses various impressive methods of defending against attacks on these devices.  IoT devices often support our most critical infrastructures, such as in modern smart cities. If a bad actor was successful essential functions of civil infrastructure could be interrupted, or sensitive data could be obtained. This use case makes IoT security not only the most challenging devices to secure but some of the most important. In particular, discussing the responder and prevention methods are often overlooked by research. What you do to solve the issue if security is breached quickly is just as important as protecting against it in many cases, especially in IoT environments where you may not have access to the devices themselves. 
+
 \section{Conclusion}
+
+In the end, I would like to thank Dr. Bertino for introducing the various challenges and methods she has discovered for protecting IoT devices. IoT security is an essential and growing field of research that presents numerous challenges for the future. The research that Dr. Bertino and her team are doing is vital to securing the devices that are a big part of the future of modern society. 
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
@@ -85,6 +101,16 @@ The author would like to thank Professor Sajal Das with the Department of Comput
 
 \bibitem{IEEEhowto:Gomes}
 E.~Bertino, ``Data Security and Privacy in the IoT.'', 2018. 
+
+\bibitem{IEEEhowto:Gomess}
+J. Won, S. Seo, and E. Bertino. A secure communication protocol for drones and smart objects. In Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security, ASIA CCS ’15, Singapore, April 14-17, 2015, pages 249–260, 2015.
+
+\bibitem{IEEEhowto:Gomess}
+J. Won, S. Seo, and E. Bertino. A Secure Shuffling Mechanism for White-Box Attack-Resistant Unmanned Vehicles.
+
+\bibitem{IEEEhowto:Gomess}
+S. Sultana, D. Midi, and E. Bertino. Kinesis: a security incident response and prevention system for wireless sensor networks. In Proceedings of the 12th ACM Conference on Embedded Network Sensor Systems, SenSys ’14, Memphis, Tennessee, USA, November 3-6, 2014, pages 148–162, 2014.
+
 
 \end{thebibliography}
 
