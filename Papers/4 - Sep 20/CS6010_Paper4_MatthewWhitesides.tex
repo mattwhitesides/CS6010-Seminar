@@ -1,0 +1,109 @@
+% options that should be set.
+\documentclass[journal,onecolumn]{IEEEtran}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Seminar Talk: ``Collaborative Machine Intelligence: Enabling Low-Power Pervasive AI'' (Speaker: Dr. Archan Mistra.)}
+
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+\author{Matthew~Whitesides}% <-this % stops a space
+
+% The paper headers
+\markboth{Missouri S\&T COMP\_SCI 6010: Seminar, Fall~2021}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+  In ``Collaborative Machine Intelligence: Enabling Low-Power Pervasive AI'' Dr. Archan Mistra descibes the cutting edge work him and his team are doing in regards to Internet of Things (IoT), distributed machine learning, and wireless energy transmissions. The following paper discusses some of the research findings Dr. Mistra has found and the impacts it could have on the future of the IoT and human wearable technology. 
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+% \begin{IEEEkeywords}
+% IEEE, IEEEtran, journal, \LaTeX, paper, template.
+% \end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction and Background}
+
+\IEEEPARstart{W}{earable} technology is becoming a widely adopted norm in modern society. Devices such as health and fitness trackers enable simple sensors to give users insights into their activities and health metrics that they would never have been able to just a few years ago. These devices pose similar challenges to any IoT device regarding computational capabilities, energy expenditure, and communication requirements. IoT refers to the network of physical objects containing sensors, computing capabilities, and some form of networking with other devices. IoT devices use these features to send data to centralized servers or centralized other connected devices using various communication technologies. IoT using sensors and computational power enables a direct connection between the physical world and the digital, allowing us to automate systems, uncover hidden meaning in data, improve healthcare management, and infinitely more possibilities. 
+
+IoT-related research combines a lot of different aspects of computer software and hardware engineering. In particular mobile sensors, data analytics, machine learning, AI, wireless technologies, and resource-constrained algorithms and energy requirements. These aspects have endless complexities and depth on their own but combining them into one solution is a unique challenge. Dr. Mistra has an extensive history in mobile sensor technologies, utilizing sensors to detect and correct movement in a user, environmental sensors to track users' patterns and newly focused research on batteryless wearable sensor technologies. These projects have given Dr. Mistra a solid foundation for utilizing data science to extract helpful information from sensor data and engineer novel wearable sensor technology. 
+
+\section{Research Contributions and Results}
+
+\subsection{Fine Grain Low Power Sensing}
+
+From Dr. Mistra's research into movement monitoring, several issues were identified in the mobile sensor field. The first is that simply attaching a sensor to a body part is not enough to allow for very fine gain movement patterns under 2cm. There need to be environmental sensors that aid in the computation of these movements to track accurately. Next, the energy expenditure for these fine movies is higher due to the increased polling rate of the sensor and frequent transmissions that need to be sent to transfer the movement data accurately. Finally, complex machine learning models need to be computed quickly by edge nodes because it is not feasible to frequently send this information to a central server and wait for a response. 
+
+\subsection{Collaborative Machine Intelligence}
+
+
+
+\subsection{WiWear and RF Energy Harvesting}
+
+\section{Lessons Learned}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+\section{Conclusion}
+The conclusion goes here.
+
+% \appendices
+% \section{Proof of the First Zonklar Equation}
+% Appendix one text goes here.
+
+% % you can choose not to have a title for an appendix
+% % if you want by leaving the argument blank
+% \section{}
+% Appendix two text goes here.
+
+
+% use section* for acknowledgment
+\section*{Acknowledgment}
+The author would like to thank Professor Sajal Das with the Department of Computer Science, Missouri University of Science and Technology and Dr. Archan Mistra with Singapore Management University.
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+% \begin{thebibliography}{1}
+
+% \bibitem{IEEEhowto:kopka}
+% H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+% \end{thebibliography}
+
+% biography section
+\begin{IEEEbiographynophoto}{Matthew Whitesides}
+  Master's Student at Missouri University of Science and Technology.
+\end{IEEEbiographynophoto}
+
+% that's all folks
+\end{document}
