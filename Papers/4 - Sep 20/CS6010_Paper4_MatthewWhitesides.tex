@@ -57,20 +57,34 @@ IoT-related research combines a lot of different aspects of computer software an
 
 \subsection{Fine Grain Low Power Sensing}
 
-From Dr. Mistra's research into movement monitoring, several issues were identified in the mobile sensor field. The first is that simply attaching a sensor to a body part is not enough to allow for very fine gain movement patterns under 2cm. There need to be environmental sensors that aid in the computation of these movements to track accurately. Next, the energy expenditure for these fine movies is higher due to the increased polling rate of the sensor and frequent transmissions that need to be sent to transfer the movement data accurately. Finally, complex machine learning models need to be computed quickly by edge nodes because it is not feasible to frequently send this information to a central server and wait for a response. 
+From Dr. Mistra's research into movement monitoring, several issues were identified in the mobile sensor field:
+\begin{itemize}
+  \item Simply attaching a sensor to a body part is not enough to allow for very fine gain movement patterns under 2cm. There need to be environmental sensors that aid in the computation of these movements to track accurately.
+  \item The energy expenditure for these fine movies is higher due to the increased polling rate of the sensor and frequent transmissions that need to be sent to transfer the movement data accurately.
+  \item Complex machine learning models need to be computed quickly by edge nodes because it is not feasible to frequently send this information to a central server and wait for a response. 
+\end{itemize}
 
-\subsection{Collaborative Machine Intelligence}
+\subsection{Collaborative Machine Intelligence (CML)}
 
+Collaborative machine intelligence refers to multiple devices sharing data and states in real-time. By using this collaborative technique, lower-powered individual devices and work collectively to make highly informed decisions. Not only distributing among themselves but in combination with machine learning at edge nodes, they found that the required accuracy of the IoT sensors can be calculated, the energy at the nodes is kept to a minimum, and the latency is within the required real time parameters. These requirements need a technique for IoT devices that allow distributed real-time sensing with complex machine learning models being used in real-time. 
 
+The basic idea in CML is to overcome the limitations of resources in individual IoT devices. Complex ML decisions such as computer vision techniques can be achieved with the IoT devices communicating with more powerful edge nodes to do the processing. This complexity has a few bottlenecks to optimal performance, including the latency of communication to the edge, the accuracy of the individual sensors, and the energy requirements needed to communicate wirelessly. Image detection accuracy was improved by taking multiple sensors and combining the results, such as various angles from camera images, striking a balance between the complexity of the models and the accuracy. Energy can be reduced by the individual sensors making simple decisions and only transmitting data that they determine is useful to the collaborative sensors. Finally, latency is improved from the lower data rate between sensors, the smart complexity of the ML models, and intelligent algorithms that eliminate the need to retrain the ML models and split up the collaborative processing and individual image processing in the network. 
 
 \subsection{WiWear and RF Energy Harvesting}
 
+One of the most significant issues with large-scale IoT device deployment is limited battery life. If IoT devices are deployed in hard-to-maintain or dangerous areas, they effectively are one-time-use devices. Once the nodes run out of battery, they are useless and become waste to collect. This one-time use deployment is costly and wasteful, leading to a great need for renewable energy in devices without human interaction. An exciting technology Dr. Mistra and the team have been working on is utilizing RF signals in novel ways.
+
+The first exploration was simply utilizing frequencies as a form of sensor to detect movement, breathing rates of users, and object detection. However, the most notable discovery was in using RF frequencies to charge battery-free IoT sensors. This technique would allow low-power IoT devices to charge wirelessly through WiFi "power" packets instead of the standard data packets. Multiple devices within WiFi range could be charged this way, and with intelligent sleep/wake energy cycles and communication rates, these "WiWear" IoT devices could be fully powered through 900 megahertz-powered RF transmitters in indoor environments. 
+
 \section{Lessons Learned}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+A lot of exciting areas of research were discussed in this presentation. Collaborative machine learning among IoT devices will be a requirement for many applications of IoT. In areas where complex real-time decisions need to be made it will require smart utilization of data from multiple sensors that does not have the time or ability to transmit back to central nodes. Decisions will need to be made and the node and edge node layers of the network and the ability to cooperate between node will enable the accuracy that vital systems require. Numerous applications for these techniques come to mind, from emergency detection to autonomous navigation and smart city environments. 
+
+Perhaps the most novel research discussed is in the wireless charging of IoT devices utilizing RF transmissions to charge low powered IoT devices in a network. This essentially solves one of the most significant issues with distributed IoT sensors in that they need to be maintained or hardwired into a power gird which is not possible in many situations. While most of the research presented was done in indoor highly prepared environments, it is easy to see how this could be scaled up in the future. The RF research in general is an interesting one, utilizing radio frequencies in unique ways from energy transfer to motion detection leads to many possibilities. These discoveries naturally uncover new challenges to solve in IoT software and hardware including intelligent ML models, communication algorithms, and energy-saving techniques, all useful to IoT research in general let alone in these applications. 
 
 \section{Conclusion}
-The conclusion goes here.
+
+In conclusion, Dr. Mistra's presentation was a fascinating and well-done survey of various new IoT research being done in areas not as often covered by IoT topics. IoT often discusses things like security, multiple applications, model building, etc. however, the ideas such as CML, RF sensing and charging, and fine grain movement tracking are all novel ideas that I had not considered before. On top of the novel ideas, we were given concrete results of implementations of these topics and how they could work in the real world, not only theoretical concepts. Overall this has inspired new ways of thinking about potential projects and research areas for IoT devices. IoT, in general, has a substantial amount of talent going into it and looks to be a significant part of the future of modern society. 
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
