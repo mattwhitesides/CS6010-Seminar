@@ -49,22 +49,48 @@
 
 \section{Introduction}
 
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''.
+\IEEEPARstart{B}{iometrics} and human-computer interface advancement have become an extraordinary field in research as of late. The idea of connected internet of things (IoT) devices providing insight into our health and biologic in ways we never previously would have known now commonplace. These passive devices can use various biological sensors to gather and monitor data on our bodies continuously. Using this data, we can make informed decisions on multiple aspects of our health and lives. For example, utilizing heart rate and exercise monitoring can give insight into calories burned to determine how much food we need to consume. Variations in ECG signals can indicate irregularities that need further attention. Or simply knowing if your body is responding to stress can start taking steps to calm themselves. 
 
 \section{Background}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Dr. Faghih and their team have taken the idea for convenient wearable devices to track a fascinating process in the human body. The autonomic nervous system controls various functions of the human body, such as heart rate, temperature, breathing rate, etc. However, how the autonomic system responds to individual stressors is an aspect of our body that must be understood. For example, heart rate variability (HRV), which measures the variation in time between heartbeats, is sensitive to neurocognitive stress. In general, the lower your HRV, the higher your stress levels. Dr. Faghih has utilized an unexploited capability that the pulsatile physiological time series collected by wrist-worn wearable devices can recover internal brain dynamics. These insights into how our body responds to stress are crucial to optimizing and understanding our well-being. 
 
 \section{Research Contributions and Results}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\subsection{Smartwatch-Brain Interface for Neurocognitive Stress}
+
+Dr. Faghih utilizes two main biological points to capture the autonomic response, skin conductance and blood cortisol. Using time-series data of these measurements recorded over a period of time, a baseline level of neurocognitive stress can be established. Then a control strategy can be developed to help maintain lower levels of stress throughout the day. These stress measurements and stimulus-response can be utilized to optimize productivity, measure cognitive engagement in a task, healthcare applications, and pain management. 
+
+The cortisol convolution profile is created using CRH and ACTH hormone secretion measurements combined with bi-exponential impulse response parameters. The skin conductance measurements are from sweat gland secretions. As someone gets aroused, there are slight changes in their sweat activity. These conductance changes are so small that we do not feel them. However, using electrodes on the skin measure the changes in conductance of the skin. Both of these responses are involuntary and wholly controlled by the ANS, which is affected by stress and stimulant, making a combination of these markers a good measurement of these factors. 
+
+\subsection{Deconvolution}
+
+Taking the two functions for skin and hormone levels was able to form an optimization problem. A challenge to achieving this model includes the sparse, unknown skin conductance stimulation. Various participants were subjected to multiple levels of stimuli, and the skin responses were measured. This data was utilized in creating a model that converted stimuli to an estimated stress state. This model can do convolution without explicitly modeling and the pulse and amplitude or the time intervals. 
+
+\subsection{Results}
+
+Many discoveries were found during the experiments, including:
+
+\begin{itemize}
+  \item Proposing a dynamic model of skin conductance.
+  \item An estimation algorithm for concurrent deconvolution of skin conductance.
+  \item Noise reduction on hand and foot simulated data.
+  \item Recovered neural stimulations match the auditory stimulation.
+\end{itemize}
+
+To gather stress sensor data, they tracked subjects under various levels of environmental arousal and stimulus. Subjects performed a cognitive task, followed by a rest period. The environmental stimulus was varied using music, from relaxing to more aggressive sounds. Using this, they developed a fascinating investigation on cognitive performance while listening to music. They found that they can optimize stimulus to achieve the best performance doing a task, that too relaxing or too high a selection of sound can limit focus and performance. 
+
+Ultimately this leads to a simple goal. A human wears a smart tracking device with skin receptors. As environmental stimulus changes, the data is run through a control model, and a final stress state is established. This seemingly simple task required a lot of research, model building, and testing of human subjects. However, the efforts paid off as this creates a powerful potential tool in improving lives and understanding our mental state, which has numerous health benefits. 
 
 \section{Lessons Learned}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+This subject matter is particularly intreating to me as I have done research to build machine learning models from health tracker sensor data, in my case, to identify individuals based on their markers and, of course, to a much lesser extent than this. The ideas and results proposed by Dr. Faghih are a great idea and something you could easily see in real-world devices soon. The market for health tracking information and stress management, and mental health is vast and has no appearance of slowing down. I think the critical aspect of the research shown here is practicality. Not only were real-world results displayed, but it can easily be seen how this would be implemented in an actual smartwatch or other health tracking type devices that exist today. 
+
+The work done with testing various levels of stimulus to productivity is also quite interesting. I have often wondered if calmer or higher-tempo music is more conducive to productivity as I listen to music while working most of the time. The finding is that there's a balance, but the more aggressive music choice helping focus is beneficial regardless of the scientific implications. This study itself is another proof of the practicality of the research in stimulus and stress management models. It is fantastic to see it being used directly to improve other research areas. 
 
 \section{Conclusion}
-The conclusion goes here.
+
+Dr. Faghih walked us through the numerous discoveries she and her team uncovered while researching brain-machine interfaces. From skin and cortisol level sensing, complex stress estimating model build, to actual subject testing to environmental stimulus. I think this is an excellent area of study that everyone could utilize, and it was great to see every aspect of the subject covered in depth that makes me think this will be in people's hands in the near future. Understanding and managing stress are vital to long terms health, but not only that, utilizing appropriate stimulus and stress to improve cognitive tasks is another critical aspect of this research that Dr. Faghih displayed with proven results. Overall a very intreating talk that I look forward to seeing the future research and results of in the future. 
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
