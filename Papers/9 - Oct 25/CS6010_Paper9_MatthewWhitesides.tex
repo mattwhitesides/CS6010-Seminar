@@ -37,7 +37,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-  In today's presentation, Dr. Philip Pare and the team take on one of the biggest challenges of our point in history, modeling and controlling how the COVID-19 virus spreads. Dr. Pare focuses on a few key areas, extending the SEIR model to transportation networks across the northeast of the United States, evaluating travel ban mitigation strategies, and modeling vaccine hesitancy vs. the spread. 
+  In today's presentation, Dr. Philip Pare and the team take on one of the biggest challenges of our point in history, modeling and controlling how the COVID-19 virus spreads. Dr. Pare focuses on a few key areas, extending the SEIR model to transportation networks across the northeast of the United States, evaluating travel ban mitigation strategies, and modeling vaccine hesitancy vs. the spread of the virus. The findings include how various factors influence the spread and estimate when the total spread for given areas will reach zero. Some critical factors include when travel bans are implemented, flow from infected regions to noninfected, and vaccine rollout and hesitancy. 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -53,22 +53,28 @@
 
 \section{Research Contributions}
 
-\subsection{Transportation Network Model}
+Transportation network analysis provides new methods to analyze the evolution of the population flow and understand its influence on COVID-19 transmission. At its simplest form, you are looking at combining transportation with biological spread data. These datasets are created by looking at transportation datasets and the corresponding infection rates over the given area based upon the transportation time and locations. The transportation data could include data from airplanes, busses, trains, etc. Ultimately this model should become a function with some curve that goes down to zero when the spread is over. How quickly and linearly this happens is going to be partially determined by these transportation factors. 
 
-Transportation network analysis provide new methods to analyze evolution of the population flow and understand its influence on COVID-19 transmission. 
+Using this model, they first implemented it by taking flight data from every commercial flight in the United States from the bureau of transportation statistics. Dr. Pare and the team collected this data to examine how the number of flights changed over time across the country during the pandemic, particularly the expected reduction in flights. As well as several flights, they estimated the load factor in each flight using public seating maps for specific airlines. Using this, they took five state regions, combined it with the spread data over the time of the flights, and calculated the model that shows the predicted spread given the amount of transportation into and out of the regions in both rural and urban counties. 
 
-\subsection{Vaccine Hesitancy Model}
+These initial models had room for improvement. So they expanded to look at the spread via population flow, in how a population moves from infected areas into noninfected, similar to travel in general but a more targeted approach to the areas of infection. Population flow is a combination of the aggregate flow out of an infected are population vs. the flow into various sub-populations. Some assumptions made are you are not infecting people during travel from one area to another. Ultimately this is only useful if they can utilize it to control the spread. To implement this, they simulated events for travel restrictions and vaccines in the models. They furthered this research in fitting the model to real-world Minnesota vaccine and spread data to determine its accuracy. Finally, they utilized this model to simulate how vaccine hesitancy affects the overall control of the spread. 
 
 \section{Results}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The initial findings from the population flow showed interesting models for travel restrictions. For example, if travel restrictions are implemented early, the initial spread is limited but later spikes. The restrictions make the integral under the curve slightly bigger because you extend the epidemic time in this model function. So next, they looked at implementing a vaccine rollout at various times in the susceptible spread groups. They say that if travel is restricted at the beginning, the vaccine rollout significantly lower is the second curve. However, if no travel is limited, this vaccine does not have nearly as strong an effect as so many more people are initially affected. 
+
+A later update to the model included vaccine hesitancy to the epidemic spread. The out parameters are the same, being the expected infected spread from the incoming infected. However, this scenario contains vaccinated people and their estimated spread. These models how delaying the implementation of vaccines or partial implementation of them modify the curve of the length of the time before the spread is zero. Keep in mind that if the vaccine rate is above zero, the spread will eventually reach equilibrium for the given zero areas. However, a number greater than zero can have the virus die out, but it's too few, then we won't reach this healthy state or disease-free state.
+
+The time when the virus spread dies out is determined by the infection rate being less than 1 percent of the population. Initial indications of the model with only travel restrictions show that it will never reach this 1 percent goal. Reaching this equilibrium is an issue because if people don't get vaccinated, then we can't. We will always have a susceptible enough portion of the population to continue to spread the virus. However, when vaccines are introduced, we see much better results to the overall number of infected, reaching this pivotal point in the line. Therefore not only do we need to implement transportation restrictions in particular outbreaks, but we also need to have a reasonably high vaccine adoption rate to enter this equilibrium.
 
 \section{Lessons Learned}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+While the conclusions to many of these findings are within the expected outcomes, e.g., limiting flow from infected areas to non-infected and implementing vaccine rollouts. The key to this research is how we can use it to prepare and predict what's happening now, not what we wish did happen, and how we can limit future outbreaks. Estimating when a pandemic could end, how much vaccine adoption we'll need, how much travel to limit are all critical areas of control that research like this can help in the now and the future. 
+
+The idea of SEIR modeling is new to me and an exciting area of study. It seems it could apply to more than just biological infections and any physical or virtual spread of an unwanted entity. The obtaining and creating of an SEIR model is interesting how Dr. Pare presented the implementation of the model. While I may not understand the math behind it, the function creation seems relatively reproducible with other datasets. Combined with a sudden worldwide interest in studying this type of research, these findings make the formal mathematical material much more exciting and essential. 
 
 \section{Conclusion}
-The recent COVID-19 outbreak has spawned a massive surge in research into understanding the spread of infectious diseases. Understanding the reach and creating mathematical models to predict the future spread and better ways of controlling spread will be vital to bring the current pandemics to an end and any future ones we may encounter. Dr. Pare and his team continue to aid in this ongoing research with his contributions in modeling transportation networks and vaccine hesitancy against the spread of the COVID-19 disease. 
+The recent COVID-19 outbreak has spawned a massive surge in research into understanding the spread of infectious diseases. Understanding the reach and creating mathematical models to predict the future spread and better ways of controlling spread will be vital to bring the current pandemics to an end and any future ones we may encounter. The world's overall health and economic impact are devastating, so advancing in prevention and understanding is vital. Dr. Pare and his team continue to aid in this ongoing research with his contributions in modeling transportation networks and vaccine hesitancy against the spread of the COVID-19 disease. 
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
