@@ -13,7 +13,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Seminar Talk: ``From Smart Sensing to Smart Living'' (Speaker: Sajal Das)}
+\title{Seminar Talk: ``Nonlinear Opinion Dynamics for Decision Making in Multi-agent Interactions'' (Speaker: Dr. Naomi Ehrich Leonard) }
 
 %
 %
@@ -47,28 +47,37 @@ The abstract goes here.
 
 \IEEEpeerreviewmaketitle
 
-\section{Introduction}
+\section{Introduction and Background}
 
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''.
+\IEEEPARstart{O}{pinion} dynamics utilize mathematical models, physical models, and agent-based modeling to investigate the spreading of opinions in a collection of agents in a system. Virtually any collective system of active agents must make decisions and form opinions about a set of options. Humans often select a leader or form opinions about issues with different types of electoral and information-sharing systems. Natural examples include bees which decide on which colony to occupy, and animals deciding which direction to travel as a herd to obtain food. In biology, on an individual level, this is achieved through neurons that gather sensor information at a higher level and utilize decision-making based on this information at the lower level. 
 
-\section{Background}
+These decisions can be viewed as a continuous dynamic system based on external inputs in a time series state space. Qualitative decisions are made based on the changing information, context, and changing behaviors of other agents in the system. For example, three people (agents) could decide which restaurant to attend, new information is added to the space as options are discussed, and they could agree on one restaurant until one agent brings up a new option that modifies the state space. Essentially this leads to multiple possible outcomes, all three agents agree, or two out of three agree on one option while one differs. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+This problem is essentially a bifurcation problem with multiple branching outcomes and a qualitative value on each branch. A bifurcation is simply a change in the system as a parameter is varied. However, modeling this problem in the real world is a difficult challenge. Agent-based models are typically used to investigate structures where opinions in a group converge over time to the desired configuration. However, in natural environments, agent groups exhibit more varying and unexpected outcomes than modeled ones. Groups in nature can rapidly switch between different opinion configurations in response to changes in their environment and often choose among options with little evidence that one option is better than another.
 
 \section{Research Contributions}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The core of the research is around non-linear multi-option opinion formation. This formula takes a set of agents, each with their own weighted relative opinion of each option. The opinions are boiled down to binary options for each agent (to agree or disagree). These are then modified over a time series based upon positive and negative feedback exchanges among agents. 
+
+Within the model, Dr. Lenoard and the team have created some interesting theories have been formed. The first is that cooperation leads to agreements among agents, while competition leads to disagreements with each other. This naturally makes sense among human and animal behaviors. These agreements and disputes lead to pitchfork bifurcations where the one option is split into three options agreement on opinion 1, 2 or the original selection unmodified. Finally, the $V_min$ and $V_max$ determine the sign and relative magnitude of the opinions, i.e., the higher the max, the stronger the cooperation or competition.   
 
 \section{Results}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Dr. Leonard and colleagues took these complex algorithms and applied them to a simulated robot swarm that had a specific task to perform. These robot agents can redistribute themselves over tasks as the environment changes or if some particular motive or urgency is implemented for various tasks. The individual robot agents then consider their neighbor's choices and weigh them against their opinions of the situation. For example, if one agent has an extreme urgency to do a particular task, more neighbor agents will take more influence to change their opinion. On the flip side, some agents are more easily swayed, leading to a cascade of an opinion throughout the swarm. 
+
+Ultimately these decisions lead to a mathematical simulation of the prisoner's dilemma, a philosophical thought experiment where it's in the group's best interest to cooperate but only if everyone agrees. Otherwise, it's in your own best interest to be selfish. These are modeled in the agents as the various opinions are mapped to a strategy heuristic that gives a defined payoff for each outcome. In this, each agent in the group can agree, disagree, or defect from its neighbors, and they all need to take that into account when making their own decisions. 
+
+The researchers then simulated these various situations. One situation contained 12 robots with three possible tasks to properly distribute the work among the agents. Next, continued dynamic task allocation in which one of the agents is very disagreeable can lead to a high cascade among the more average weighted agents. Even the prisoner's dilemma itself was modeled, which by default led to about twenty-five percent of the time the agents cooperate. Then you can use the weights to determine based upon the traits of the prisoners the likely outcomes. 
 
 \section{Lessons Learned}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Opinion dynamics is an interesting problem that combines computational intelligence with group behaviors. In researching this, you would uncover fundamental values on how humans make decisions and think as a group, bringing more interesting philosophical thoughts. These models attempt to distill natural instinct and society into a predictable model, which is pretty fascinating as a concept. Applying these models to robot swarms leads to exciting implications for the future of drones and autonomous agents. These agents can make informed decisions to achieve tasks efficiently and intelligently that would not be naturally thought of by a single agent or possible to program in anticipation of the events that could occur. 
+
+Some of the particular situations proposed to make a lot of sense, such as the prisoner's dilemma and how extreme examples of zealot agents have an exponential influence on other agents nearby. These ideas are part of our everyday connected lives in the modern world. However, mathematically modeling them is a fascinating idea and how to do so is equally interesting. The complexity of the bifurcation and decision-making formulas proposed are both simple in the outcome but have many factors in the decisions from time intervals, neighbors, personal opinion weights, urgency, etc. This philosophical thought about how the natural world works mixed with computational science is some of the most exciting work I feel can be done in computer science. 
 
 \section{Conclusion}
-The conclusion goes here.
+
+Dr. Leonard and the team have given a fascinating deep mathematical model to understand a naturally occurring phenomenon where groups tend to think alike and some extremes influence others. These ideas are particularly important in modern times as factors like social media spread ideas, and it's essential to understand and model them. Not only to understand the natural world however what's potentially more interesting is how software can utilize these findings to enable simulated or real-world robotic agents to perform group tasks efficiently and respond to changing environments. Our natural world has evolved to do this intelligence easily in groups. Implementing these findings has endless applications among various technologies such as IoT devices, networks, drones, autonomous robotics, etc. 
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
@@ -82,7 +91,7 @@ The conclusion goes here.
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
-The author would like to thank Professor Sajal Das with the Department of Computer Science, Missouri University of Science and Technology.
+The author would like to thank Professor Sajal Das with the Department of Computer Science, Missouri University of Science and Technology and Dr. Naomi Ehrich Leonard with Princeton University.
 
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
